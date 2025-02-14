@@ -58,4 +58,4 @@ The following parameters can be set:
 
  An example would be:
 
- [!image](./example.png?raw=true)
+ [!screenshot](./example.png?raw=true)
