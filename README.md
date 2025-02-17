@@ -62,7 +62,9 @@ BundestagChart({ width:viewport.width,
   ]})
 ```
 
-
+See it in action:
+<iframe width="100%" height="774" frameborder="0"
+  src="https://observablehq.com/embed/88312723b9a52359@117?cells=viewof+BundestagControls%2Cviewof+Bundestag"></iframe>
 
 
 The following parameters can be set:
@@ -79,7 +81,3 @@ The following parameters can be set:
  * @param {Array} config.partiesData - Array of party data [{party: "SPD", count: 206, color: "red"}]
  * @returns {SVGElement} - Returns an SVG element
  */
-
- An example would be:
-
- [!Example](http://raw.githubusercontent.com/addi-p/bundestag/refs/heads/main/example.png?raw=true)
