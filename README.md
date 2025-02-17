@@ -82,4 +82,4 @@ The following parameters can be set:
 
  An example would be:
 
- [!screenshot](https://raw.githubusercontent.com/addi-p/bundestag/refs/heads/main/example.png?raw=true)
+ [!Example](http://raw.githubusercontent.com/addi-p/bundestag/refs/heads/main/example.png?raw=true)
