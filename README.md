@@ -1,5 +1,7 @@
 # bundestag
- 
+
+![Example](https://github.com/addi-p/bundestag/blob/main/example.png?raw=true)
+
 This little npm package aims to allow one to qick and dirty plot the arrangement of seats in the german bundestag. 
 
 Specifically it is aimed at ObservablesHQ users.
