@@ -21,10 +21,11 @@ import { Inputs } from "@observablehq/inputs"
 ```
 viewof rows = Inputs.range([3, 12], { label: "Number of Rows", step: 1, value: 8 })
 ```
+
 ```
 viewof radius = Inputs.range([150, 400], { label: "Circle Radius", step: 10, value: 300 })
 ```
-
+```
 BundestagChart({
   width: 800,
   height: 600,
@@ -39,6 +40,29 @@ BundestagChart({
     { party: "AfD", seats: 83, color: "blue" },
   ]
 })
+```
+On can also add additional information about distinct seats, for example politicians, occupying said seat. 
+
+```
+BundestagChart({ width:viewport.width, 
+                 heigth:viewport.height, 
+                 radius:BundestagControls.radius,
+                 circleHeightAdjuster:BundestagControls.circleHeightAdjuster,
+                 seatFactor:BundestagControls.SeatSize,
+                 partyGap:BundestagControls.partyGap,
+                 rows:BundestagControls.numberOfRows, 
+                 partiesData,
+                peopleData: [
+    { id: "seat-1", name: "Person 1", party: "BSW", role: "Opposition" },
+    { id: "seat-153", name: "Person 2", party: "SPD", role: "MP" },
+    { id: "seat-277", name: "Person 3", party: "GREEN", role: "MP" },
+    { id: "seat-401", name: "Person 4", party: "FDP", role: "MP" },
+    { id: "seat-543", name: "Person 5", party: "CDU/CSU", role: "Opposition" },
+    { id: "seat-724", name: "Person 6", party: "AfD", role: "Opposition" },
+  ]})
+```
+
+
 
 
 The following parameters can be set:
@@ -58,4 +82,4 @@ The following parameters can be set:
 
  An example would be:
 
- [!screenshot](./example.png?raw=true)
+ [!screenshot](https://raw.githubusercontent.com/addi-p/bundestag/refs/heads/main/example.png?raw=true)
