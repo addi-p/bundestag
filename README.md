@@ -63,9 +63,7 @@ BundestagChart({ width:viewport.width,
 ```
 
 See it in action:
-<iframe width="100%" height="774" frameborder="0"
-  src="https://observablehq.com/embed/88312723b9a52359@117?cells=viewof+BundestagControls%2Cviewof+Bundestag"></iframe>
-
+https://observablehq.com/d/88312723b9a52359
 
 The following parameters can be set:
 /**
