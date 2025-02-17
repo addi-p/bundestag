@@ -30,7 +30,7 @@ export function BundestagChart({
     peopleData = [] // 🔹 New: Data about people occupying seats
   } = {}) {
     const sectionGap = partyGap * Math.PI; // 🔹 Default gap between sections
-    const totalSeats = partiesData.reduce((sum, party) => sum + party.count, 0);
+    const totalSeats = partiesData.reduce((sum, party) => sum + party.seats, 0);
     const centerX = width / 2;
     const centerY = height / circleHeightAdjuster;
     const seatData = [];
@@ -51,7 +51,7 @@ export function BundestagChart({
   const peopleBySeatId = new Map(peopleData.map(person => [person.id, person]));
 
   for (const party of partiesData) {
-    let partySeats = party.count;
+    let partySeats = party.seats;
     let partyAngleSpan = (partySeats / totalSeats) * availableAngle;
 
     let seatIndex = 0;

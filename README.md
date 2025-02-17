@@ -7,7 +7,7 @@ Specifically it is aimed at ObservablesHQ users.
 The package with its one method can be imported via:
 
 ```
-BundestagChart = await import("https://cdn.jsdelivr.net/npm/bundestag@1.2.10/+esm").then(m => m.BundestagChart)
+BundestagChart = await import("https://cdn.jsdelivr.net/npm/bundestag@1.3.5/+esm").then(m => m.BundestagChart)
 ```
 
 into a ObservablesHQ cell. 
@@ -31,12 +31,12 @@ BundestagChart({
   radius,
   rows,
   partiesData: [
-    { party: "LINKE", count: 39, color: "purple" },
-    { party: "SPD", count: 206, color: "red" },
-    { party: "GRÜNE", count: 118, color: "green" },
-    { party: "FDP", count: 92, color: "yellow" },
-    { party: "CDU/CSU", count: 197, color: "black" },
-    { party: "AfD", count: 83, color: "blue" },
+    { party: "LINKE", seats: 39, color: "purple" },
+    { party: "SPD", seats: 206, color: "red" },
+    { party: "GRÜNE", seats: 118, color: "green" },
+    { party: "FDP", seats: 92, color: "yellow" },
+    { party: "CDU/CSU", seats: 197, color: "black" },
+    { party: "AfD", seats: 83, color: "blue" },
   ]
 })
 
